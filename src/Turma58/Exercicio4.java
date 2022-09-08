@@ -11,7 +11,7 @@ public class Exercicio4 {
 		
 		Scanner leia = new Scanner(System.in);
 		
-		double numero, raiz, elevado;
+		double numero;
 		
 		System.out.println("\nDigite um número qualquer: ");
 		numero = leia.nextFloat();
