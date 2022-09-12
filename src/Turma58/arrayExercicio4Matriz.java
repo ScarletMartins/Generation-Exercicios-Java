@@ -41,7 +41,7 @@ public class arrayExercicio4Matriz {
 			for(linha=0; linha < 2; linha++) {
 				for(coluna=0; coluna < 2; coluna++) {
 					M3[linha][coluna] = M1[linha][coluna] + M2[linha][coluna];
-					System.out.println("["+M3[linha][coluna]+"]");
+					System.out.println("\nSoma: ["+M3[linha][coluna]+"]");
 				}
 			}
 			break;
@@ -49,8 +49,8 @@ public class arrayExercicio4Matriz {
 		case 2:
 			for(linha=0; linha < 2; linha++) {
 				for(coluna=0; coluna < 2; coluna++) {
-					M3[linha][coluna] = M1[linha][coluna] - M2[linha][coluna];
-					System.out.println("\n["+M3[linha][coluna]+"]");
+					M3[linha][coluna] = M2[linha][coluna] - M1[linha][coluna];
+					System.out.println("\nDiferença: ["+M3[linha][coluna]+"]");
 				}
 			}
 			break;
@@ -82,6 +82,8 @@ public class arrayExercicio4Matriz {
 				}
 			}
 			break;
+			default:
+				System.out.println("\nOpção inválida. Tente novamente!!");
 		}
 	}
 }
