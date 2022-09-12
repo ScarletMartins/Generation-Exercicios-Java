@@ -9,23 +9,23 @@ public class arrayExercicio4Matriz {
 		
 		Scanner leia = new Scanner(System.in);
 		
-		float[][] valoresM1 = new float[2][2];
-		float[][] valoresM2 = new float[2][2];
-		float[][] valoresM3 = new float[valoresM1.length][valoresM1.length];
+		float[][] M1 = new float[2][2];
+		float[][] M2 = new float[2][2];
+		float[][] M3 = new float[2][2];
 		
-		int x, linha, coluna, op, somaM, subtM;
+		int linha, coluna, op;
 		
 		for(linha=0;linha<2;linha++) {
 			for(coluna=0;coluna<2;coluna++) {
-				System.out.println("\nDigite um número real para preenchimento da primeira matriz: ");
-				valoresM1[linha][coluna] = leia.nextFloat();
+				System.out.println("\nDigite os valores da Matriz 1: ");
+				M1[linha][coluna] = leia.nextFloat();
 			}
 		}
 		
 		for(linha=0;linha<2;linha++) {
 			for(coluna=0;coluna<2;coluna++) {
-				System.out.println("\nDigite um número real para preenchimento da segunda matriz: ");
-				valoresM2[linha][coluna] = leia.nextFloat();
+				System.out.println("\nDigite os valores da Matriz 2: ");
+				M2[linha][coluna] = leia.nextFloat();
 			}
 		}
 		
@@ -38,19 +38,19 @@ public class arrayExercicio4Matriz {
 		
 		switch(op) {
 		case 1:
-			for(linha=0; linha < valoresM3.length; linha++) {
-				for(coluna=0; coluna < valoresM3.length; coluna++) {
-					valoresM3[linha][coluna] = valoresM1[linha][coluna] + valoresM2[linha][coluna];
-					System.out.println("["+valoresM3[linha][coluna]+"]");
+			for(linha=0; linha < 2; linha++) {
+				for(coluna=0; coluna < 2; coluna++) {
+					M3[linha][coluna] = M1[linha][coluna] + M2[linha][coluna];
+					System.out.println("["+M3[linha][coluna]+"]");
 				}
 			}
 			break;
 		
 		case 2:
-			for(linha=0; linha < valoresM3.length; linha++) {
-				for(coluna=0; coluna < valoresM3.length; coluna++) {
-					valoresM3[linha][coluna] = valoresM1[linha][coluna] - valoresM2[linha][coluna];
-					System.out.println("\n["+valoresM3[linha][coluna]+"]");
+			for(linha=0; linha < 2; linha++) {
+				for(coluna=0; coluna < 2; coluna++) {
+					M3[linha][coluna] = M1[linha][coluna] - M2[linha][coluna];
+					System.out.println("\n["+M3[linha][coluna]+"]");
 				}
 			}
 			break;
@@ -60,25 +60,25 @@ public class arrayExercicio4Matriz {
 			System.out.println("\nDigite um número constante: ");
 			c = leia.nextFloat();
 			
-			for(linha=0; linha < valoresM3.length; linha++) {
-				for(coluna=0; coluna < valoresM3.length; coluna++) {
-					System.out.println(valoresM3[linha][coluna] = valoresM1[linha][coluna] + c);
+			for(linha=0; linha < 2; linha++) {
+				for(coluna=0; coluna < 2; coluna++) {
+					System.out.println(M3[linha][coluna] = M1[linha][coluna] + c);
 				}
 			}
 
-			for(linha=0; linha < valoresM3.length; linha++) {
-				for(coluna=0; coluna <valoresM3.length; coluna++) {
-					System.out.println(valoresM3[linha][coluna] = valoresM2[linha][coluna] + c);
+			for(linha=0; linha < 2; linha++) {
+				for(coluna=0; coluna < 2; coluna++) {
+					System.out.println(M3[linha][coluna] = M2[linha][coluna] + c);
 				}
 			}
 			
 			break;
 			
 		case 4:
-			for(linha=0; linha < valoresM3.length; linha++) {
-				for(coluna=0; coluna < valoresM3.length; coluna++) {
-					System.out.println("\n["+valoresM1[linha][coluna]+"]");
-					System.out.println("\n["+valoresM2[linha][coluna]+"]");
+			for(linha=0; linha < 2; linha++) {
+				for(coluna=0; coluna < 2; coluna++) {
+					System.out.println("\n["+M1[linha][coluna]+"]");
+					System.out.println("\n["+M2[linha][coluna]+"]");
 				}
 			}
 			break;
