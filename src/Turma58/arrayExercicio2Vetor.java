@@ -14,19 +14,25 @@ public class arrayExercicio2Vetor {
 		for(x=0;x<6;x++) {
 			System.out.println("\nDigite um número: ");
 			numero[x] = leia.nextInt();
-			
+		}
+		
+		System.out.println("\nNúmeros pares: ");
+		for(x=0;x<6;x++) {
 			if(numero[x]%2==0) {
+				System.out.println(numero[x]);
 				somaPar += numero[x];
-				System.out.println("\nNúmero par digitado: "+numero[x]);
-			}else {
-				qI++;
-				System.out.println("\nNúmero ímpar digitado: "+numero[x]);
 			}
 		}
-
-		//System.out.println("\nNúmeros pares digitados: "+);
+			
+		System.out.println("\nNúmeros ímpares: ");
+		for(x=0;x<6;x++) {
+			if(numero[x]%2==1) {
+				System.out.println(numero[x]);
+				qI++;
+			}
+		}
+		
 		System.out.println("\nSoma dos números pares digitados: "+somaPar);
-		//System.out.println("\nNúmeros ímpares digitados: "+);
 		System.out.println("\nQuantidade dos números ímpares digitados: "+qI);
 	}
 
