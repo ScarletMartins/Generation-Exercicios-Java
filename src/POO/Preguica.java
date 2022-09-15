@@ -2,23 +2,21 @@ package POO;
 
 public class Preguica extends Animal {
 	
-	private String acao;
+	public Preguica(String nome, int idade) {
+		super(nome, idade);
+	}
 	
-	public Preguica(String nome, String emitirSom, int idade, String acao) {
-		super(nome, emitirSom, idade);
-		
-		this.acao = acao;
+	@Override
+	public void som(String som) {
+		System.out.println("\nA preguiça emite o som: ahh ahhh. Este é seu som característico!!");
 	}
-
-	public String getAcao() {
-		return acao;
-	}
-
-	public void setAcao(String acao) {
-		this.acao = acao;
+	
+	@Override
+	public void acao(String acao) {
+		System.out.println("\nA açao da preguiça é subir em árvores!!\n\n\n\t---------------------------");
 	}
 	
 	public void imprimirDados() {
-		System.out.println("\n\t\tDados do animal: \n\nNome: "+getNome()+"\nIdade: "+getIdade()+"\nEmite o som: "+getEmitirSom()+"\nAção: "+acao);
+		System.out.println("\n\tDados do animal \n\nNome: "+getNome()+"\n\nIdade: "+getIdade());
 	}
 }
